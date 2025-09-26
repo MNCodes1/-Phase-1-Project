@@ -1,0 +1,112 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f8ff;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+main {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+}
+
+/* Header */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #0077b6;
+}
+
+/* Start Button */
+#start-btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #00b4d8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#start-btn:hover {
+  background-color: #0096c7;
+}
+
+/* Timer Display */
+#timer {
+  font-size: 2.5rem;
+  margin: 1.5rem 0;
+  color: #023e8a;
+}
+
+/* Quadrant Guide */
+#quadrant {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  background-color: #caf0f8;
+  border-radius: 6px;
+}
+
+/* Tip Box */
+#tip-box {
+  font-size: 1rem;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+/* Completion Message */
+#completion-message {
+  font-size: 1.5rem;
+  color: #38b000;
+  animation: pop 0.6s ease forwards;
+}
+
+/* Hidden Class */
+.hidden {
+  display: none;
+}
+
+/* Animation */
+@keyframes pop {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.fade {
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
