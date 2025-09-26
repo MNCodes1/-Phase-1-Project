@@ -56,7 +56,7 @@ As a user, I want a visual countdown so I can see how much time is left.
 
 As a user, I want the app to notify me when brushing is complete so I know I’ve done a good job.
 
-🛠️ Technologies Used
+ Technologies Used
 HTML: Semantic structure
 
 CSS: Responsive design, animations, and visual hierarchy
