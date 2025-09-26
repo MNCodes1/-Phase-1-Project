@@ -3,18 +3,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Toothbrush Timer</title>
+  <title>Toothbrush Timer App</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main>
-    <h1>🦷 Toothbrush Timer</h1>
-    <button id="start-btn">Start Brushing</button>
-    <div id="timer">2:00</div>
-    <div id="quadrant">Ready to brush!</div>
-    <div id="tip-box" class="hidden"></div>
-    <div id="completion-message" class="hidden"> Great job!</div>
-  </main>
+  <div class="container">
+    <h1>🪥 Toothbrush Timer</h1>
+
+    <div id="user-setup">
+      <input type="text" id="name-input" placeholder="Enter your name" />
+      <button id="save-name-btn">Save Name</button>
+    </div>
+    <div id="welcome-message"></div>
+
+    <div class="controls">
+      <button id="start-btn">Start</button>
+      <button id="pause-btn">Pause</button>
+      <button id="reset-btn">Reset</button>
+    </div>
+
+    <div id="timer-display">2:00 remaining</div>
+    <div id="quadrant-display">Ready to brush!</div>
+
+    <div id="quadrant-guide">
+      <div class="quadrant" id="q1">Top Left</div>
+      <div class="quadrant" id="q2">Top Right</div>
+      <div class="quadrant" id="q3">Bottom Left</div>
+      <div class="quadrant" id="q4">Bottom Right</div>
+    </div>
+
+    <label>
+      <input type="checkbox" id="theme-toggle" />
+      Dark Mode
+    </label>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>

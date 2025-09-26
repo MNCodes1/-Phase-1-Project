@@ -1,112 +1,61 @@
-/* Reset and base styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: Arial, sans-serif;
+  text-align: center;
   background-color: #f0f8ff;
   color: #333;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-main {
-  text-align: center;
-  padding: 2rem;
-  border-radius: 12px;
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
   background-color: #ffffff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  width: 90%;
-  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-/* Header */
-h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #0077b6;
+.controls {
+  margin-bottom: 20px;
 }
 
-/* Start Button */
-#start-btn {
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  background-color: #00b4d8;
-  color: white;
-  border: none;
-  border-radius: 8px;
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  margin: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
-#start-btn:hover {
-  background-color: #0096c7;
+#timer-display, #quadrant-display {
+  font-size: 24px;
+  margin: 15px 0;
 }
 
-/* Timer Display */
-#timer {
-  font-size: 2.5rem;
-  margin: 1.5rem 0;
-  color: #023e8a;
+#quadrant-guide {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 20px;
 }
 
-/* Quadrant Guide */
-#quadrant {
-  font-size: 1.25rem;
-  margin-bottom: 1rem;
-  padding: 0.5rem;
-  background-color: #caf0f8;
-  border-radius: 6px;
+.quadrant {
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-weight: bold;
+  background-color: #f9f9f9;
 }
 
-/* Tip Box */
-#tip-box {
-  font-size: 1rem;
-  font-style: italic;
-  color: #555;
-  margin-bottom: 1rem;
+.active {
+  background-color: #cce5ff;
+  border-color: #007bff;
 }
 
-/* Completion Message */
-#completion-message {
-  font-size: 1.5rem;
-  color: #38b000;
-  animation: pop 0.6s ease forwards;
-}
-
-/* Hidden Class */
-.hidden {
-  display: none;
-}
-
-/* Animation */
-@keyframes pop {
-  0% {
-    transform: scale(0.5);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-.fade {
-  animation: fadeIn 0.5s ease;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+#user-setup {
+  margin-bottom: 15px;
 }

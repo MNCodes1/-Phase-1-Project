@@ -1,0 +1,48 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Nancy",
+      "darkMode": true,
+      "streak": 6
+    }
+  ],
+  "sessions": [
+    {
+      "id": "1",
+      "userId": 1,
+      "date": "2025-09-25",
+      "duration": 120,
+      "quadrants": [
+        "Top Left",
+        "Top Right",
+        "Bottom Left",
+        "Bottom Right"
+      ]
+    },
+    {
+      "id": "2",
+      "userId": 1,
+      "date": "2025-09-26",
+      "duration": 120,
+      "quadrants": [
+        "Top Left",
+        "Top Right",
+        "Bottom Left",
+        "Bottom Right"
+      ]
+    },
+    {
+      "id": "fb9d",
+      "userId": 1,
+      "date": "2025-09-26",
+      "duration": 120,
+      "quadrants": [
+        "Top Left",
+        "Top Right",
+        "Bottom Left",
+        "Bottom Right"
+      ]
+    }
+  ]
+}
